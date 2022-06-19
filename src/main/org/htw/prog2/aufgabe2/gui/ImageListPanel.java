@@ -1,13 +1,9 @@
 package org.htw.prog2.aufgabe2.gui;
 
-import org.htw.prog2.aufgabe2.DICOMImage;
+import org.htw.prog2.aufgabe2.ImageSeries;
 
 import javax.swing.*;
-import javax.swing.border.LineBorder;
 import java.awt.*;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
-import java.util.LinkedList;
 
 public class ImageListPanel extends JPanel {
 
@@ -15,7 +11,7 @@ public class ImageListPanel extends JPanel {
 
     }
 
-    public void setImage(DICOMImage newImage) {
+    public void setImageSeries(ImageSeries series) {
 
     }
 }

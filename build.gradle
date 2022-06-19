@@ -3,10 +3,10 @@ plugins {
     id 'application'
 }
 
-mainClassName = 'org.htw.prog2.aufgabe2.DICOMDiagnostics'
+mainClassName = 'org.htw.prog2.aufgabe2.SiteInspector'
 
 run {
-    systemProperty "java.library.path", 'lib'
+
 }
 
 tasks.withType(JavaCompile) {
@@ -18,12 +18,6 @@ version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
-    maven {
-        url "https://www.dcm4che.org/maven2/"
-    }
-    maven {
-        url "https://raw.github.com/nroduit/mvn-repo/master/"
-    }
 }
 
 test{
@@ -46,11 +40,6 @@ sourceSets {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
-    implementation 'org.dcm4che:dcm4che-core:5.23.1'
-    implementation 'org.dcm4che:dcm4che-image:5.23.1'
-    implementation 'org.dcm4che:dcm4che-imageio:5.23.1'
-    implementation 'org.dcm4che:dcm4che-imageio-rle:5.23.1'
-    implementation 'org.dcm4che:dcm4che-imageio-opencv:5.23.1'
 }
 
 test {
