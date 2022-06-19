@@ -62,7 +62,7 @@ Implementieren Sie eine Klasse ```MainFrame```, die von ```JFrame``` erbt und da
     * Öffnen - zeigt einen ```JFileChooser``` zum Laden einer oder mehrerer *.png* - Bilder an und benachrichtigt entsprechend das ```ImageListPanel``` wenn die Dateien ausgewählt wurden (siehe [Oracle-Dokumentation](https://docs.oracle.com/javase/tutorial/uiswing/components/filechooser.html), Abschnitt "Selecting Files and Directories").
     * Speichern - speichert jeweils Grauwertbild, Overlay und combined Image für jedes Frame der Bildreihe
     * Beenden - beendet das Programm über ```System.exit(0)```
-* ```public void setDetailFrame(Frame frame, boolean showEdges)```: Benachrichtigt das ```ImageDetailPanel```, dass ein bestimmter ```Frame``` angezeigt werden soll. Hinweis: An dieser Stelle ist es sinnvoll, ein ```revalidate()``` und ein ```repaint()``` zu machen, um die komplette Anzeige (inklusive der nun veränderten Anzeige des Bildes) zu aktualisieren.
+* ```public void setDetailFrame(Frame frame, boolean showTracing)```: Benachrichtigt das ```ImageDetailPanel```, dass ein bestimmter ```Frame``` angezeigt werden soll. Hinweis: An dieser Stelle ist es sinnvoll, ein ```revalidate()``` und ein ```repaint()``` zu machen, um die komplette Anzeige (inklusive der nun veränderten Anzeige des Bildes) zu aktualisieren.
 * ```public void setDetailSeries(ImageSeries imageSeries)```: Aktualisiert die Einstellungen des Bilder-Sliders (der als Maximum-Wert die Anzahl der Frames im Bild haben sollte) und setzt die Detailansicht auf den ersten Frame des Bildes (am besten über ```setDetailFrame```).
 * ```public void updateDetailView()```: Setzt (am besten über ```setDetailFrame```) den angezeigten Frame auf den, welcher über den Slider (an den Wert kommt man über ```JSlider.getValue()```) selektiert ist. Aktualisiert außerdem den Text in dem Label neben dem Slider (also "Bild X/Y").
 * ```public void setPreviousDetailFrame()```: Setzt den angezeigten Frame auf den Frame vor dem, der jetzt angezeigt wird. Hinweis: Wenn Sie den Wert eines Sliders programmatisch über ```JSlider.setValue()``` verändern, dann wird der ```ChangeListener``` des ```JSlider``` genau so benachrichtigt, wie wenn die Veränderung durch den Benutzer mit der Maus vorgenommen wird.
@@ -108,6 +108,6 @@ Fügen Sie zuletzt im Konstruktor dem ```ImageDetailPanel``` einen ```MouseWheel
 
 ## Abgabe
 
-Im Ordner ```Bilder``` finden Sie eine Datei ```DICOM-2.mp4```, die in einigen Sekunden kurz die Bedienung der beschriebenen Elemente des Programms zeigt.
+Im Ordner ```Bilder``` finden Sie eine Datei ```SiteInspector.mp4```, die in einigen Sekunden kurz die Bedienung der beschriebenen Elemente des Programms zeigt.
 
-Fügen Sie Ihrem Repository ebenfalls im Ordner ```Bilder``` ein maximal 30-sekündiges Video hinzu, das auf ähnliche Art die Bedienung Ihres Programms zeigt. Die Videodatei sollte nicht größer als 5 MB sein.
+Fügen Sie Ihrem Repository ebenfalls im Ordner ```Bilder``` ein maximal 90-sekündiges Video hinzu, das auf ähnliche Art die Bedienung Ihres Programms zeigt. Die Videodatei sollte nicht größer als 5 MB sein.
