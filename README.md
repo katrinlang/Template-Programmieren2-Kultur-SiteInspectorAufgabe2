@@ -110,4 +110,4 @@ Fügen Sie zuletzt im Konstruktor dem ```ImageDetailPanel``` einen ```MouseWheel
 
 Im Ordner ```Bilder``` finden Sie eine Datei ```SiteInspector.mp4```, die in einigen Sekunden kurz die Bedienung der beschriebenen Elemente des Programms zeigt.
 
-Fügen Sie Ihrem Repository ebenfalls im Ordner ```Bilder``` ein maximal 90-sekündiges Video hinzu, das auf ähnliche Art die Bedienung Ihres Programms zeigt. Die Videodatei sollte nicht größer als 5 MB sein.
+Fügen Sie Ihrem Repository ebenfalls im Ordner ```Bilder``` ein maximal 90-sekündiges Video hinzu, das auf ähnliche Art die Bedienung Ihres Programms zeigt. Die Videodatei sollte nicht größer als 15 MB sein.
