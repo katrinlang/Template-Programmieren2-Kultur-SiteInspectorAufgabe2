@@ -28,8 +28,6 @@ public class Frame {
         computeCombinedImage();
     }
 
-
-
     public BufferedImage getImage() {
         return image;
     }
